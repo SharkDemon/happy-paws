@@ -13,6 +13,11 @@ export default class Volunteer extends React.Component {
                         <li>City: </li>
                         <li>State: </li>
                         <li>Zip Code: </li>
+                        <li>Vehicle Color: </li>
+                        <li>Vehicle Brand: </li>
+                        <li>Vehicle Model: </li>
+                        <li>License Plate: </li>
+                        <li>License Plate State: </li>
                         <li>Verified: </li>
                     </ul>
                 </div>
@@ -24,6 +29,11 @@ export default class Volunteer extends React.Component {
                         <li>City: </li>
                         <li>State: </li>
                         <li>Zip Code: </li>
+                        <li>Vehicle Color: </li>
+                        <li>Vehicle Brand: </li>
+                        <li>Vehicle Model: </li>
+                        <li>License Plate: </li>
+                        <li>License Plate State: </li>
                         <li>Verified: </li>
                     </ul>
                 </div>
@@ -35,6 +45,11 @@ export default class Volunteer extends React.Component {
                         <li>City: </li>
                         <li>State: </li>
                         <li>Zip Code: </li>
+                        <li>Vehicle Color: </li>
+                        <li>Vehicle Brand: </li>
+                        <li>Vehicle Model: </li>
+                        <li>License Plate: </li>
+                        <li>License Plate State: </li>
                         <li>Verified: </li>
                     </ul>
                 </div>
