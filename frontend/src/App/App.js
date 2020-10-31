@@ -1,22 +1,28 @@
 import React from 'react';
 import './App.css';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import MainRouter from '../Components/MainRouter';
 import Copyright from '../Components/Copyright';
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <div className='app'>
         <header className='appHeader'>
-                <Link to='/'><h1>Happy Paws</h1></Link>
-                <MainRouter />
-                <Copyright />
+          <h1>
+            <BrowserRouter>
+              <Link style={{ textDecoration: 'none', color: '#FFD700' }} to='/' >Happy Paws</Link>
+            </BrowserRouter>
+          </h1>
         </header>
+        <main>
+            <MainRouter />
+        </main>
+        <footer>
+            <Copyright />
+        </footer>
       </div>
     );
   }
 }
-
-export default App;
 
