@@ -7,8 +7,9 @@ const landing = () => {
             <h3 className='landingText'>An App made for dogs transportation!</h3>
             <div id='buttonContainer'>
                 <Link
+                    style={{ textDecoration: 'none', color: '#FFD700' }}
                     id='startButton'
-                    to='/volunteer'>Click to transport!
+                    to='/home'>Click to transport!
                 </Link>
             </div>
             <p id='landingText' className='landingText'>
