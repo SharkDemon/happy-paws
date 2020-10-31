@@ -4,18 +4,14 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.Data;
 
-@Entity(name="pets")
+@Entity
+@Table(name="pets")
 @Data
-public class Pet {
-
-    @Id
-    private Integer id;
-
-    private String name;
+public class Pet extends AbstractPet {
 
     private String gender;
 
