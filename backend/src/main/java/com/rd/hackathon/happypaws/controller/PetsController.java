@@ -25,12 +25,13 @@ public class PetsController {
     @Autowired
     private PetService petService;
 
-    @GetMapping(path="/")
+    @GetMapping(path={"","/"})
     public ResponseEntity<?> getAllPets() {
 
         logger.info("Fetching all Pets");
 
         List<Pet> pets = petService.getAllPets();
+        logger.info("Found {} pets", pets.size());
         if (pets.isEmpty()) {
             return new ResponseEntity<>(pets, HttpStatus.NOT_FOUND);
         } else {

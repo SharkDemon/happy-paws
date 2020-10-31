@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS pets;
+DROP SEQUENCE IF EXISTS pets_id_seq;
 CREATE SEQUENCE pets_id_seq;
 CREATE TABLE pets (
     id INT DEFAULT nextval('pets_id_seq') PRIMARY KEY,
