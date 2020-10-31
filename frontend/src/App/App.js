@@ -11,7 +11,7 @@ export default class App extends React.Component {
         <header className='appHeader'>
           <h1>
             <BrowserRouter>
-              <Link style={{ textDecoration: 'none', color: '#FFD700' }} to='/' >Happy Paws</Link>
+              <Link style={{ textDecoration: 'none', color: '#FFD700' }} to='/home' >Happy Paws</Link>
             </BrowserRouter>
           </h1>
         </header>

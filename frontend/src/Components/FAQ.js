@@ -5,9 +5,25 @@ export default function FAQ() {
     <section className='faq'>
       <div>
         <h2>Frequent Asked Questions:</h2>
-        <h3> 1 - Why are pets so cute?</h3>
+        <h3> 1 - I need to transport a pet. What is the best way to do it?</h3>
         <p>
-          "Because they are fluffy."
+          "<em>Happy Paws</em> is an app that connects volunteers all over United States that are willing to help transport dogs to the safety of shelters or the destined home."
+        </p>
+        <h3> 2 - How can I volunteer?</h3>
+        <p>
+          "Simply choose from our menu which "Trip" you would like to pick up. You will have to provide with your License Plate and Vehicle Model."
+        </p>
+        <h3> 3 - Do I get payed for gas or mileage?</h3>
+        <p>
+          "No. This is a volunteer work, so no cash involved."
+        </p>
+        <h3> 4 - How will I know that the leg before or after mine will get filled?</h3>
+        <p>
+          "It shows on the map which legs are covered and which are not. Make sure to get one that someone is also covering the path before and/or after you."
+        </p>
+        <h3> 5 - Are the volunteers verified?</h3>
+        <p>
+          "Yes. We do a background check that verifies the drivers."
         </p>
       </div>
     </section>
