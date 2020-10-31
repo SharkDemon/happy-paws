@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter, Link } from "react-router-dom";
 import Volunteer from '../Volunteer/Volunteer';
 import Dog from '../Dog/Dog';
 import Trip from '../Trip/Trip';
@@ -12,9 +12,10 @@ export default class MainRouter extends React.Component {
     return (
       <div>
         <BrowserRouter>
+        <Link style={{ textDecoration: 'none', color: '#FFD700' }} to='/home'><h1>Happy Paws</h1></Link>
           <Switch>
               <Route exact path='/' component={Landing} />
-              <Route path='/home' component={Home} />
+              <Route exact path='/home' component={Home} />
               <Route path='/volunteer' component={Volunteer} />
               <Route path='/dog' component={Dog} />
               <Route path='/trip' component={Trip} />
