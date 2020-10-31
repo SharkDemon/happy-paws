@@ -13,13 +13,14 @@ A simple web application to help newly-adopted pets travel to the permanent home
 
 * HappyPaws Client & Server: [Github](https://github.com/SharkDemon/happy-paws)
 
-## 📌💻 Technology Used
+## 📌💻 Technology Used:
 
 #### Front-End: 
 
 ![](https://img.shields.io/badge/Code-CSS-informational?style=flat&logo=css&logoColor=white&color=sucess)
 ![](https://img.shields.io/badge/Code-React-informational?style=flat&logo=react&logoColor=white&color=sucess)
-![](https://img.shields.io/badge/Code-HTML-informational?style=flat&logo=html&logoColor=white&color=sucess)
+![](https://img.shields.io/badge/Code-ReactRouter-informational?style=flat&logo=react&logoColor=white&color=sucess)
+![](https://img.shields.io/badge/Code-HTML5-informational?style=flat&logo=html&logoColor=white&color=sucess)
 ![](https://img.shields.io/badge/Code-Enzyme-informational?style=flat&logo=enzyme&logoColor=white&color=sucess)
 
 #### Back-End: 
@@ -27,13 +28,25 @@ A simple web application to help newly-adopted pets travel to the permanent home
 ![](https://img.shields.io/badge/Code-CockroachDB-informational?style=flat&logo=cokroach&logoColor=white&color=sucess)
 ![](https://img.shields.io/badge/Code-Doker-informational?style=flat&logo=doker&logoColor=white&color=sucess)
 
-## 📌📄 API Documentation
+#### Dev Tools:
+
+![](https://img.shields.io/badge/Git-informational?style=flat&logo=git&logoColor=white&color=sucess)
+![](https://img.shields.io/badge/GitHub-informational?style=flat&logo=github&logoColor=white&color=sucess)
+
+## 📌📄 API Documentation:
+
+| Method | Path               | Purpose                                                        |
+| ------ | ------------------ | -------------------------------------------------------------- |
+| GET    | /api/pets          | Get all the pets in the queue                                  |
+| GET    | /api/volunteers    | Get all the vonlunteers in the queue                           |
+| GET    | /api/volunteers/id | Gets a specific volunteer according to an id                   |
+| GET    | /api/trips         | Get all the trips in the queue                                 |
 
 
 ## 📌📇 Contact:
 <hr>
 
-LinkedIn: [Rory](https://www.linkedin.com/in/taxman2k/)
-LinkedIn: [Renata](https://www.linkedin.com/in/renatafd/?locale=en_US)
+- LinkedIn: [Rory](https://www.linkedin.com/in/taxman2k/).
+- LinkedIn: [Renata](https://www.linkedin.com/in/renatafd/?locale=en_US).
 
 <hr>
