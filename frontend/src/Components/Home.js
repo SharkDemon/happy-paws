@@ -7,13 +7,16 @@ export default class Home extends React.Component {
       <nav>
         <div>
           <Link style={{ textDecoration: 'none', color: '#FFD700' }} to="/volunteer">
-            Volunteer
+            Volunteers
           </Link>
           <Link style={{ textDecoration: 'none', color: '#FFD700' }} to="/dog">
-            Dog
+            Dogs
           </Link>
           <Link style={{ textDecoration: 'none', color: '#FFD700' }} to='/trip'>
-            Trip Duration
+            Trips
+          </Link>
+          <Link style={{ textDecoration: 'none', color: '#FFD700' }} to='/FAQ'>
+            FAQ
           </Link>
         </div>
       </nav>
