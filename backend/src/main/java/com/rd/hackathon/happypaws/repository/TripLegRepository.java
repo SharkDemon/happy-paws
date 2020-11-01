@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.rd.hackathon.happypaws.model.TripLeg;
@@ -12,6 +13,6 @@ import com.rd.hackathon.happypaws.model.TripLeg;
 public interface TripLegRepository extends JpaRepository<TripLeg, Integer> {
 
     @Query("SELECT tl FROM trip_legs tl WHERE tl.tripId = :tripId ORDER BY tl.pickupDate ASC")
-    List<TripLeg> findLegsForTrip(Integer tripId);
+    List<TripLeg> findLegsForTrip(@Param("tripId") Integer tripId);
 
 }
