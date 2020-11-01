@@ -42,7 +42,7 @@ A simple web application to help newly-adopted pets travel to the permanent home
 | GET    | /api/volunteers    | Get all the volunteers in the queue                            |
 | GET    | /api/volunteers/id | Gets a specific volunteer according to an id                   |
 | GET    | /api/trips         | Get all the trips in the queue                                 |
-| GET    | /api/trips/id      | Get all the trips in the queue                                 |
+| GET    | /api/trips/id      | Gets a specific trip according to an id                        |
 
 
 ## 📌📇 Contact:
