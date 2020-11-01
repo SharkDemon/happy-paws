@@ -17,9 +17,9 @@
 
 	<properties>
 		<java.version>11</java.version>
-        	<flyway.url>jdbc:postgresql://localhost:26257/happypaws?ssl&#61;true&#38;sslmode&#61;disable</flyway.url>
-        	<flyway.user>paws_app</flyway.user>
-        	<flyway.password></flyway.password>
+        <flyway.url>jdbc:postgresql://localhost:26257/happypaws?ssl&#61;true&#38;sslmode&#61;disable</flyway.url>
+        <flyway.user>paws_app</flyway.user>
+        <flyway.password></flyway.password>
 	</properties>
 
 	<dependencies>
