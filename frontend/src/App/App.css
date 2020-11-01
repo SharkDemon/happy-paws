@@ -32,7 +32,7 @@ a{
 .nav{
   display: flex;
   justify-content: center;
-  border: 2px solid orange;
+  border: 2px solid #ffff;
   border-radius: 10px;
   margin-left: 600px;
   margin-right: 600px;
