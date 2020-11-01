@@ -34,4 +34,6 @@ public class Volunteer extends AbstractVolunteer {
 
     private String licensePlateState;
 
+    private String image;
+
 }
