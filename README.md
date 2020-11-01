@@ -44,6 +44,9 @@ A simple web application to help newly-adopted pets travel to the permanent home
 | GET    | /api/trips         | Get all the trips in the queue                                 |
 | GET    | /api/trips/id      | Gets a specific trip according to an id                        |
 
+## Attribution:
+
+Profile image photos harvested from [pexels.com](https://www.pexels.com) (can modify and use for free), edited at [pixlr.com](https://pixlr.com/x/), and then compressed at [tinypng.com](https://tinypng.com/).
 
 ## 📌📇 Contact:
 <hr>

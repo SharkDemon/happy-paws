@@ -1,5 +1,6 @@
 package com.rd.hackathon.happypaws.model;
 
+import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
@@ -13,5 +14,8 @@ public abstract class AbstractPet {
     private Integer id;
 
     private String name;
+
+    @Column(name="image_thumb")
+    private String imageThumb;
 
 }
