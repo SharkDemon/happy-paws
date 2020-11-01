@@ -21,4 +21,7 @@ public abstract class AbstractVolunteer {
 
     private Boolean verified;
 
+    @Column(name="image_thumb")
+    private String imageThumb;
+
 }
