@@ -1,5 +1,6 @@
 import React from 'react';
 import BASE_URL from '../config';
+import Image from '../Image/Image';
 
 export default function Volunteer(props) {
         return(
@@ -17,11 +18,15 @@ export default function Volunteer(props) {
                         <li>Vehicle Model: {props.volunteer.carModel}</li>
                         <li>License Plate: {props.volunteer.licensePlateNumber}</li>
                         <li>License Plate State: {props.volunteer.licensePlateState}</li>
-                        <li>Verified: {props.volunteer.verified}</li>
+                        <li>Verified: { renderImage(props.volunteer.verified) }</li>
                     </ul>
-                    <img src={`${BASE_URL}${props.volunteer.imageThumb}`} alt={props.volunteer.firstName}/>
+                    <Image image={`${BASE_URL}${props.volunteer.image}`} imageT={`${BASE_URL}${props.volunteer.imageThumb}`}/>
+                    <div>         </div>
                 </div>
             </div>
-        );
+        ); 
 }
 
+function renderImage(verified) {
+    return verified ? "🟢" : "🔴";
+}

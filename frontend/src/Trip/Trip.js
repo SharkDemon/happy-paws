@@ -1,5 +1,6 @@
 import React from 'react';
 import BASE_URL from '../config';
+import Image from '../Image/Image';
 
 export default function Trip(props) {
     return(
@@ -17,8 +18,9 @@ export default function Trip(props) {
                     <li>Delivery ZipCode: {props.trips.endZip}</li>
                     <li>Total Mileage: {props.trips.estimatedMiles}</li>
                 </ul>
-                <img src={`${BASE_URL}${props.trips.pet.imageThumb}`} alt={props.trips.pet.name}/>
+                <Image image={`${BASE_URL}${props.trips.pet.image}`} imageT={`${BASE_URL}${props.trips.pet.imageThumb}`}/>
                 <p>{props.trips.pet.name}</p>
+                <div>         </div>
             </div>
         </div>
     );

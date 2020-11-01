@@ -78,7 +78,8 @@ ul {
   margin-right: 600px;
   margin-bottom: 20px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between;
 }

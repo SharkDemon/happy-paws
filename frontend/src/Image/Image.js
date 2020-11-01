@@ -13,7 +13,7 @@ export default class Image extends React.Component {
       <div>
         <img
           className="small"
-          src="http://192.168.86.94/images/pets/8-husky-thumb.png"
+          src={this.props.imageT}
           onClick={this.handleShowDialog}
           alt="one"
         />
@@ -26,7 +26,7 @@ export default class Image extends React.Component {
           >
             <img
               className="image"
-              src="http://192.168.86.94/images/pets/8-husky.png"
+              src={this.props.image}
               onClick={this.handleShowDialog}
               alt="no"
             />

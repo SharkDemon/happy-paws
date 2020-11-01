@@ -31,7 +31,7 @@ export default class Home extends React.Component {
           </nav>
         </div>
         <div>
-          <h2 className='yellow'> The paws bellow found a new home!</h2>
+          <h2 className='yellow'> The paws below found a new home!</h2>
             <Carousel />
         </div>
       </div>
