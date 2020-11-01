@@ -1,60 +1,27 @@
 import React from 'react';
+import BASE_URL from '../config';
 
-export default class Volunteer extends React.Component {
-    render(){
+export default function Volunteer(props) {
         return(
             <div>
-                <h1>Volunteer Drivers</h1>
                 <div className='block-vol flex'>
                     <ul>
-                        <li>First Name: </li>
-                        <li>Last Name: </li>
-                        <li>Birthday: </li>
-                        <li>City: </li>
-                        <li>State: </li>
-                        <li>Zip Code: </li>
-                        <li>Vehicle Color: </li>
-                        <li>Vehicle Brand: </li>
-                        <li>Vehicle Model: </li>
-                        <li>License Plate: </li>
-                        <li>License Plate State: </li>
-                        <li>Verified: </li>
+                        <li>First Name: {props.volunteer.firstName}</li>
+                        <li>Last Name: {props.volunteer.lastName}</li>
+                        <li>Age: {props.volunteer.age}</li>
+                        <li>City: {props.volunteer.city}</li>
+                        <li>State: {props.volunteer.state}</li>
+                        <li>ZipCode: {props.volunteer.zip}</li>
+                        <li>Vehicle Color: {props.volunteer.carColor}</li>
+                        <li>Vehicle Brand: {props.volunteer.carMake}</li>
+                        <li>Vehicle Model: {props.volunteer.carModel}</li>
+                        <li>License Plate: {props.volunteer.licensePlateNumber}</li>
+                        <li>License Plate State: {props.volunteer.licensePlateState}</li>
+                        <li>Verified: {props.volunteer.verified}</li>
                     </ul>
-                </div>
-                <div className='block-vol flex'>
-                    <ul>
-                        <li>First Name: </li>
-                        <li>Last Name: </li>
-                        <li>Birthday: </li>
-                        <li>City: </li>
-                        <li>State: </li>
-                        <li>Zip Code: </li>
-                        <li>Vehicle Color: </li>
-                        <li>Vehicle Brand: </li>
-                        <li>Vehicle Model: </li>
-                        <li>License Plate: </li>
-                        <li>License Plate State: </li>
-                        <li>Verified: </li>
-                    </ul>
-                </div>
-                <div className='block-vol flex'>
-                    <ul>
-                        <li>First Name: </li>
-                        <li>Last Name: </li>
-                        <li>Birthday: </li>
-                        <li>City: </li>
-                        <li>State: </li>
-                        <li>Zip Code: </li>
-                        <li>Vehicle Color: </li>
-                        <li>Vehicle Brand: </li>
-                        <li>Vehicle Model: </li>
-                        <li>License Plate: </li>
-                        <li>License Plate State: </li>
-                        <li>Verified: </li>
-                    </ul>
+                    <img src={`${BASE_URL}${props.volunteer.imageThumb}`} alt={props.volunteer.firstName}/>
                 </div>
             </div>
         );
-    }
 }
-//TODO ADD MAP?
+

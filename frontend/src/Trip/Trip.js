@@ -1,44 +1,26 @@
 import React from 'react';
+import BASE_URL from '../config';
 
-export default class Trip extends React.Component {
-    render(){
-        return(
-            <div>
-                <h1>Trip Durations</h1>
-                <div className='block-vol flex'>
-                    <ul>
-                        <li>Pick Up Location: </li>
-                        <li>Starting Time: </li>
-                        <li>Estimated Trip Duration: </li>
-                        <li>Delivery Time: </li>
-                        <li>Mileage: </li>
-                        <li>City: </li>
-                        <li>State: </li>
-                    </ul>
-                </div>
-                <div className='block-vol flex'>
-                    <ul>
-                        <li>Pick Up Location: </li>
-                        <li>Starting Time: </li>
-                        <li>Estimated Trip Duration: </li>
-                        <li>Delivery Time: </li>
-                        <li>Mileage: </li>
-                        <li>City: </li>
-                        <li>State: </li>
-                    </ul>
-                </div>
-                <div className='block-vol flex'>
-                    <ul>
-                        <li>Pick Up Location: </li>
-                        <li>Starting Time: </li>
-                        <li>Estimated Trip Duration: </li>
-                        <li>Delivery Time: </li>
-                        <li>Mileage: </li>
-                        <li>City: </li>
-                        <li>State: </li>
-                    </ul>
-                </div>
+export default function Trip(props) {
+    return(
+        <div>
+            <div className='block-vol flex'>
+                <ul>
+                    <li>Pick Up Location: {props.trips.startCity}</li>
+                    <li>Starting State: {props.trips.startState}</li>
+                    <li>Starting ZipCode: {props.trips.startZip}</li>
+                    <li>Starting Date & Time: {props.trips.startDate}</li>
+                    <hr />
+                    <li>Delivering Date & Time: {props.trips.endDate}</li>
+                    <li>Delivery City: {props.trips.endCity}</li>
+                    <li>Delivery State: {props.trips.endState}</li>
+                    <li>Delivery ZipCode: {props.trips.endZip}</li>
+                    <li>Estimated Trip Duration: </li>
+                    <li>Total Mileage: {props.trips.estimatedMiles}</li>
+                </ul>
+                <img src={`${BASE_URL}${props.trips.pet.imageThumb}`} alt={props.trips.pet.name}/>
+                <li>{props.trips.pet.name}</li>
             </div>
-        );
-    }
+        </div>
+    );
 }

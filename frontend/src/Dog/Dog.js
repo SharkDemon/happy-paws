@@ -1,39 +1,20 @@
 import React from 'react';
+import BASE_URL from '../config';
 
-export default class Dog extends React.Component {
-    render(){
+export default function Dog(props) {
     return(
         <div>
-            <h1>Dogs</h1>
             <div className='block-vol flex'>
                 <ul>
-                    <li>Name: </li>
-                    <li>Age: </li>
-                    <li>Weight: </li>
-                    <li>Breed: </li>
-                    <li>Gender: </li>
+                    <li>Name: {props.pet.name}</li>
+                    <li>Age: {props.pet.age}</li>
+                    <li>Weight: {props.pet.weight}</li>
+                    <li>Breed: {props.pet.breed}</li>
+                    <li>Gender: {props.pet.gender}</li>
+                    <li>Adoption Date: {props.pet.adoptionDate}</li>
                 </ul>
-            </div>
-            <div className='block-vol flex'>
-                <ul>
-                    <li>Name: </li>
-                    <li>Age: </li>
-                    <li>Weight: </li>
-                    <li>Breed: </li>
-                    <li>Gender: </li>
-                </ul>
-            </div>            
-            <div className='block-vol flex'>
-                <ul>
-                    <li>Name: </li>
-                    <li>Age: </li>
-                    <li>Weight: </li>
-                    <li>Breed: </li>
-                    <li>Gender: </li>
-                </ul>
+                <img src={`${BASE_URL}${props.pet.imageThumb}`} alt={props.pet.name}/>
             </div>
         </div>
     );
- }
-
 }

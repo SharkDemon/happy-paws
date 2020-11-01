@@ -1,9 +1,9 @@
-import BASE_URL from '../config';
+import BASE_URL from '../../../config';
 
-const APIServices ={
+const APIServices = {
 
     getAllPets(){
-        return fetch(`${BASE_URL}/api/pets`,{
+        return fetch(`${BASE_URL}/pets`,{
             method: 'GET',
             headers: {
                 "content-type": "application/json",
@@ -15,7 +15,7 @@ const APIServices ={
     },
 
     getPetsID(id){
-        return fetch(`${BASE_URL}/api/pets/${id}`,{
+        return fetch(`${BASE_URL}/pets/${id}`,{
             method: 'GET',
             headers: {
                 "content-type": "application/json",
@@ -27,7 +27,7 @@ const APIServices ={
     },
 
     getAllVolunteers(){
-        return fetch(`${BASE_URL}/api/volunteers`,{
+        return fetch(`${BASE_URL}/volunteers`,{
             method: 'GET',
             headers: {
                 "content-type": "application/json",
@@ -39,7 +39,7 @@ const APIServices ={
     },
 
     getVolunteersID(id){
-        return fetch(`${BASE_URL}/api/volunteers/${id}`,{
+        return fetch(`${BASE_URL}/volunteers/${id}`,{
             method: 'GET',
             headers: {
                 "content-type": "application/json",
@@ -51,7 +51,7 @@ const APIServices ={
     },
 
     getAllTrips(){
-        return fetch(`${BASE_URL}/api/trips`,{
+        return fetch(`${BASE_URL}/trips`,{
             method: 'GET',
             headers: {
                 "content-type": "application/json",
@@ -63,7 +63,7 @@ const APIServices ={
     },
 
     getTripsID(id){
-        return fetch(`${BASE_URL}/api/trips/${id}`,{
+        return fetch(`${BASE_URL}/trips/${id}`,{
             method: 'GET',
             headers: {
                 "content-type": "application/json",
