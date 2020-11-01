@@ -1,1 +1,1 @@
-DROP TABLE IF EXISTS volunteers;
+SET TIMEZONE='America/Chicago';

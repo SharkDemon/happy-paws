@@ -4,27 +4,17 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.Data;
 
-@Entity(name="volunteers")
+@Entity
+@Table(name="volunteers")
 @Data
-public class Volunteer {
-
-    @Id
-    private Integer id;
-
-    @Column(name="first_name")
-    private String firstName;
-
-    @Column(name="last_name")
-    private String lastName;
+public class Volunteer extends AbstractVolunteer {
 
     @Column(name="birth_date")
     private Date birthDate;
-
-    private Boolean verified;
 
     private String city;
 

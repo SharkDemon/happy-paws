@@ -1,6 +1,6 @@
 package com.rd.hackathon.happypaws.model;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,7 +23,7 @@ public class Trip {
     private SimplePet pet;
 
     @Column(name="start_date")
-    private Date startDate;
+    private LocalDateTime startDate;
     @Column(name="start_city")
     private String startCity;
     @Column(name="start_state")
@@ -32,7 +32,7 @@ public class Trip {
     private String startZip;
 
     @Column(name="end_date")
-    private Date endDate;
+    private LocalDateTime endDate;
     @Column(name="end_city")
     private String endCity;
     @Column(name="end_state")
@@ -40,6 +40,7 @@ public class Trip {
     @Column(name="end_zip")
     private String endZip;
 
-    // HANDLE TripLeg SCENARIO
+    @Column(name="est_miles")
+    private Integer estimatedMiles;
 
 }

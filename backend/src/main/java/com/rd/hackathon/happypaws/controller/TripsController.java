@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rd.hackathon.happypaws.model.Trip;
+import com.rd.hackathon.happypaws.model.TripDto;
+import com.rd.hackathon.happypaws.model.TripLeg;
+import com.rd.hackathon.happypaws.service.TripLegService;
 import com.rd.hackathon.happypaws.service.TripService;
 
 @RestController
@@ -24,6 +27,8 @@ public class TripsController {
 
     @Autowired
     private TripService tripService;
+    @Autowired
+    private TripLegService tripLegService;
 
     @GetMapping(path={"","/"})
     public ResponseEntity<?> getAllTrips() {
@@ -45,10 +50,14 @@ public class TripsController {
         logger.info("Fetching Trip with id={}", id);
 
         Optional<Trip> trip = tripService.getTripBydId(id);
+
         if (trip.isEmpty()) {
             return new ResponseEntity<>("Trip not found", HttpStatus.BAD_REQUEST);
         } else {
-            return new ResponseEntity<>(trip.get(), HttpStatus.OK);
+
+            List<TripLeg> legs = tripLegService.getAllTripLegsForTrip(trip.get().getId());
+
+            return new ResponseEntity<>(new TripDto(trip.get(), legs), HttpStatus.OK);
         }
     }
 
