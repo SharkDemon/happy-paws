@@ -26,7 +26,7 @@ A simple web application to help newly-adopted pets travel to the permanent home
 #### Back-End: 
 
 ![](https://img.shields.io/badge/Code-CockroachDB-informational?style=flat&logo=cokroach&logoColor=white&color=sucess)
-![](https://img.shields.io/badge/Code-Doker-informational?style=flat&logo=doker&logoColor=white&color=sucess)
+![](https://img.shields.io/badge/Code-Docker-informational?style=flat&logo=docker&logoColor=white&color=sucess)
 
 #### Dev Tools:
 
@@ -38,9 +38,11 @@ A simple web application to help newly-adopted pets travel to the permanent home
 | Method | Path               | Purpose                                                        |
 | ------ | ------------------ | -------------------------------------------------------------- |
 | GET    | /api/pets          | Get all the pets in the queue                                  |
-| GET    | /api/volunteers    | Get all the vonlunteers in the queue                           |
+| GET    | /api/pets/id       | Gets a specific pet according to an id                         |
+| GET    | /api/volunteers    | Get all the volunteers in the queue                            |
 | GET    | /api/volunteers/id | Gets a specific volunteer according to an id                   |
 | GET    | /api/trips         | Get all the trips in the queue                                 |
+| GET    | /api/trips/id      | Get all the trips in the queue                                 |
 
 
 ## 📌📇 Contact:
