@@ -1,6 +1,6 @@
 package com.rd.hackathon.happypaws.data;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import com.rd.hackathon.happypaws.model.Pet;
 import com.rd.hackathon.happypaws.model.SimplePet;
@@ -15,7 +15,7 @@ public class PetBuilder {
     private String breed;
     private String image;
     private String imageThumb;
-    private Date adoptionDate;
+    private LocalDate adoptionDate;
 
     public PetBuilder setId(Integer id) {
         this.id = id;
@@ -57,7 +57,7 @@ public class PetBuilder {
         return this;
     }
 
-    public PetBuilder setAdoptionDate(Date adoptionDate) {
+    public PetBuilder setAdoptionDate(LocalDate adoptionDate) {
         this.adoptionDate = adoptionDate;
         return this;
     }

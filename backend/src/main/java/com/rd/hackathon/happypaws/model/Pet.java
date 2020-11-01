@@ -1,10 +1,13 @@
 package com.rd.hackathon.happypaws.model;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 
@@ -21,9 +24,12 @@ public class Pet extends AbstractPet {
 
     private String breed;
 
-    private String image;
-
     @Column(name="adopt_date")
-    private Date adoptionDate;
+    @JsonIgnore
+    private LocalDate adoptionDate;
+
+    public String getFormattedAdoptionDate() {
+        return adoptionDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    }
 
 }

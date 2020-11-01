@@ -15,6 +15,8 @@ public abstract class AbstractPet {
 
     private String name;
 
+    private String image;
+
     @Column(name="image_thumb")
     private String imageThumb;
 

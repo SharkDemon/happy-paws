@@ -1,6 +1,7 @@
 package com.rd.hackathon.happypaws.model;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +9,8 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 
@@ -23,6 +26,7 @@ public class Trip {
     private SimplePet pet;
 
     @Column(name="start_date")
+    @JsonIgnore
     private LocalDateTime startDate;
     @Column(name="start_city")
     private String startCity;
@@ -32,6 +36,7 @@ public class Trip {
     private String startZip;
 
     @Column(name="end_date")
+    @JsonIgnore
     private LocalDateTime endDate;
     @Column(name="end_city")
     private String endCity;
@@ -42,5 +47,13 @@ public class Trip {
 
     @Column(name="est_miles")
     private Integer estimatedMiles;
+
+    public String getFormattedStartDate() {
+        return startDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    }
+
+    public String getFormattedEndDate() {
+        return endDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    }
 
 }
