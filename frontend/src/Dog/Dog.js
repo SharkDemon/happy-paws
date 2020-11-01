@@ -11,7 +11,7 @@ export default function Dog(props) {
                     <li>Weight: {props.pet.weight}</li>
                     <li>Breed: {props.pet.breed}</li>
                     <li>Gender: {props.pet.gender}</li>
-                    <li>Adoption Date: {props.pet.adoptionDate}</li>
+                    <li>Adoption Date: {props.pet.formattedAdoptionDate}</li>
                 </ul>
                 <img src={`${BASE_URL}${props.pet.imageThumb}`} alt={props.pet.name}/>
             </div>

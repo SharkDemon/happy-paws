@@ -9,17 +9,16 @@ export default function Trip(props) {
                     <li>Pick Up Location: {props.trips.startCity}</li>
                     <li>Starting State: {props.trips.startState}</li>
                     <li>Starting ZipCode: {props.trips.startZip}</li>
-                    <li>Starting Date & Time: {props.trips.startDate}</li>
+                    <li>Starting Date & Time: {props.trips.formattedStartDate}</li>
                     <hr />
-                    <li>Delivering Date & Time: {props.trips.endDate}</li>
+                    <li>Delivering Date & Time: {props.trips.formattedEndDate}</li>
                     <li>Delivery City: {props.trips.endCity}</li>
                     <li>Delivery State: {props.trips.endState}</li>
                     <li>Delivery ZipCode: {props.trips.endZip}</li>
-                    <li>Estimated Trip Duration: </li>
                     <li>Total Mileage: {props.trips.estimatedMiles}</li>
                 </ul>
                 <img src={`${BASE_URL}${props.trips.pet.imageThumb}`} alt={props.trips.pet.name}/>
-                <li>{props.trips.pet.name}</li>
+                <p>{props.trips.pet.name}</p>
             </div>
         </div>
     );
