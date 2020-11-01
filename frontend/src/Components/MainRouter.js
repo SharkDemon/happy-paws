@@ -12,7 +12,7 @@ export default class MainRouter extends React.Component {
     return (
       <div>
         <BrowserRouter>
-        <Link to='/home'><h1 className='title'>Happy Paws</h1></Link>
+        <Link to='/'><h1 className='title'>Happy Paws</h1></Link>
           <Switch>
               <Route exact path='/' component={Landing} />
               <Route exact path='/home' component={Home} />
