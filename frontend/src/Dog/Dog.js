@@ -5,7 +5,7 @@ export default class Dog extends React.Component {
     return(
         <div>
             <h1>Dogs</h1>
-            <div>
+            <div className='block-vol flex'>
                 <ul>
                     <li>Name: </li>
                     <li>Age: </li>
@@ -14,7 +14,7 @@ export default class Dog extends React.Component {
                     <li>Gender: </li>
                 </ul>
             </div>
-            <div>
+            <div className='block-vol flex'>
                 <ul>
                     <li>Name: </li>
                     <li>Age: </li>
@@ -23,7 +23,7 @@ export default class Dog extends React.Component {
                     <li>Gender: </li>
                 </ul>
             </div>            
-            <div>
+            <div className='block-vol flex'>
                 <ul>
                     <li>Name: </li>
                     <li>Age: </li>

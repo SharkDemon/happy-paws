@@ -5,7 +5,7 @@ export default class Volunteer extends React.Component {
         return(
             <div>
                 <h1>Volunteer Drivers</h1>
-                <div>
+                <div className='block-vol flex'>
                     <ul>
                         <li>First Name: </li>
                         <li>Last Name: </li>
@@ -21,7 +21,7 @@ export default class Volunteer extends React.Component {
                         <li>Verified: </li>
                     </ul>
                 </div>
-                <div>
+                <div className='block-vol flex'>
                     <ul>
                         <li>First Name: </li>
                         <li>Last Name: </li>
@@ -37,7 +37,7 @@ export default class Volunteer extends React.Component {
                         <li>Verified: </li>
                     </ul>
                 </div>
-                <div>
+                <div className='block-vol flex'>
                     <ul>
                         <li>First Name: </li>
                         <li>Last Name: </li>
