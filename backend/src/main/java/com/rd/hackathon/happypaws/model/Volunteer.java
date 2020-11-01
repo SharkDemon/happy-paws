@@ -38,8 +38,6 @@ public class Volunteer extends AbstractVolunteer {
 
     private String licensePlateState;
 
-    private String image;
-
     public int getAge() {
         return Period.between(birthDate, LocalDate.now()).getYears();
     }

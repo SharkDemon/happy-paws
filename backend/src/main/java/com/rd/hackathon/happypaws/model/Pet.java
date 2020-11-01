@@ -24,8 +24,6 @@ public class Pet extends AbstractPet {
 
     private String breed;
 
-    private String image;
-
     @Column(name="adopt_date")
     @JsonIgnore
     private LocalDate adoptionDate;
