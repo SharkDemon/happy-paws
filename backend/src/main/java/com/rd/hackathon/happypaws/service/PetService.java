@@ -2,6 +2,7 @@ package com.rd.hackathon.happypaws.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,6 +26,13 @@ public class PetService {
 
     public Optional<Pet> getPetBydId(Integer petId) {
         return petRepo.findById(petId);
+    }
+
+    public List<String> getRandomImages(int num, boolean fullsize) {
+        List<Pet> randomPets = petRepo.findRandomPets(num);
+        return randomPets.stream()
+                .map(p -> fullsize ? p.getImage() : p.getImageThumb() )
+                .collect(Collectors.toList());
     }
 
 }
