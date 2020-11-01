@@ -13,14 +13,21 @@
   text-align: center;
 }
 
+.flex {
+  display: flex;
+}
+
 a{
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .title{
   font-size: 70px;
   color: #FFD700;
-
 }
 
 .copyright{
@@ -63,4 +70,15 @@ a{
   margin-left: 600px;
   margin-right: 600px;
   padding: 10px;
+}
+
+.block-vol {
+  border: 2px #ffff solid;
+  margin-left: 600px;
+  margin-right: 600px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  flex-direction: row;
+  align-items: flex-start;
 }

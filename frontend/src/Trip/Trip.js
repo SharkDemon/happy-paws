@@ -5,7 +5,7 @@ export default class Trip extends React.Component {
         return(
             <div>
                 <h1>Trip Durations</h1>
-                <div>
+                <div className='block-vol flex'>
                     <ul>
                         <li>Pick Up Location: </li>
                         <li>Starting Time: </li>
@@ -16,7 +16,7 @@ export default class Trip extends React.Component {
                         <li>State: </li>
                     </ul>
                 </div>
-                <div>
+                <div className='block-vol flex'>
                     <ul>
                         <li>Pick Up Location: </li>
                         <li>Starting Time: </li>
@@ -27,7 +27,7 @@ export default class Trip extends React.Component {
                         <li>State: </li>
                     </ul>
                 </div>
-                <div>
+                <div className='block-vol flex'>
                     <ul>
                         <li>Pick Up Location: </li>
                         <li>Starting Time: </li>
