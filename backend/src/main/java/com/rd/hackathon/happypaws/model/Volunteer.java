@@ -1,10 +1,13 @@
 package com.rd.hackathon.happypaws.model;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.Period;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 
@@ -14,7 +17,8 @@ import lombok.Data;
 public class Volunteer extends AbstractVolunteer {
 
     @Column(name="birth_date")
-    private Date birthDate;
+    @JsonIgnore
+    private LocalDate birthDate;
 
     private String city;
 
@@ -35,5 +39,9 @@ public class Volunteer extends AbstractVolunteer {
     private String licensePlateState;
 
     private String image;
+
+    public int getAge() {
+        return Period.between(birthDate, LocalDate.now()).getYears();
+    }
 
 }
