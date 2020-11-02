@@ -6,7 +6,7 @@ By Rory and Renata.
 ![](https://img.shields.io/badge/Hackathon-Winner🏆-informational?style=flat&logo=hackathon&logoColor=white&color=sucess)
 
 
-🥇 Hack or Treat? 🎃 Best Use of CockroachDB.
+🥇 HackOrTreat? 🎃 Best Use of CockroachDB. [October 30th - November 1st 2020]
 
 ## 📌 Summary:
 
