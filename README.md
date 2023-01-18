@@ -4,7 +4,7 @@ By Rory and Renata.
 ![GitHub contributors](https://img.shields.io/github/contributors/SharkDemon/happy-paws?style=plastic&logoColor=white&color=blue)
 ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/SharkDemon/happy-paws?style=plastic)
 ![](https://img.shields.io/badge/Hackathon-Winner🏆-informational?style=flat&logo=hackathon&logoColor=white&color=sucess)
-
+[![HitCount](http://hits.dwyl.com/SharkDemon/happy-paws.svg)](http://hits.dwyl.com/SharkDemon/happy-paws)
 
 🥇 HackOrTreat? 🎃 Best Use of CockroachDB. [October 30th - November 1st 2020]
 
